@@ -1,0 +1,9 @@
+extends layout
+block header
+    .row
+        .container-fluid
+            .col-lg-4.col-lg-4.col-sm-6
+                form(name='upload', method='post', action='/addpicture', enctype='multipart/form-data')
+                    input(type='text', name='titleName')
+                    input(type='file', name='fileUpload')
+                    input(type='submit', value='upload')
